@@ -8,3 +8,9 @@ CREATE TABLE IF NOT EXISTS employee (
 );
 
 DESCRIBE employee;
+
+INSERT INTO employee VALUES
+  (1, 'Joe',1000),
+  (3, 'Henry',2000),
+  (4, 'Sam',2500),
+  (5, 'Max',1500);

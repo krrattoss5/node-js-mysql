@@ -4,6 +4,7 @@ import route from './src/routes/employes.routes.js'
 import router from './src/routes/index.routes.js'
 
 const app = express()
+app.use(express.json())
 
 app.use('/',route)
 app.use('/',router)
