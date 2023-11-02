@@ -1,12 +1,7 @@
-//const express = require("express")
-import express from 'express'
-import route from './src/routes/employes.routes.js'
-import router from './src/routes/index.routes.js'
+import app from './src/app.js'
+import { config } from 'dotenv'
+config()
 
-const app = express()
-app.use(express.json())
+const PORT = process.env.PORT || 3000
 
-app.use('/',route)
-app.use('/',router)
-
-app.listen(3000,()=>console.log('running on http://localhost:3000/'))
+app.listen(PORT,()=>console.log(`running on http://localhost:${PORT}/`))
